@@ -1,0 +1,58 @@
+.Card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 23.5rem;
+    width: 100%;
+    padding: 2rem;
+    gap: 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 1rem var(--Grayish-Blue);
+}
+.Card h2{
+    color: var(--Very-Dark-Blue);
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.Card p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+.Card img{
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+.Card:nth-child(1){
+    grid-area: card1;
+    align-self: center;
+}
+.Card:nth-child(2){
+    grid-area: card2;    
+}
+.Card:nth-child(3){
+    grid-area: card3;
+}
+.Card:nth-child(4){
+    grid-area: card4;
+    align-self: center;
+}
+.cyan{
+    border-top: .4rem solid var(--Cyan);
+}
+.red{
+    border-top: .4rem solid var(--Red);
+}
+.orange{
+    border-top: .4rem solid var(--Orange);
+}
+.blue{
+    border-top: .4rem solid var(--Blue);
+}
+@media only screen and (max-width: 900px) {
+    .Card p{
+        font-size: 0.8rem;
+    }
+}
+
